@@ -7,7 +7,7 @@ class MyAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 130,
+      height: 115,
       padding: EdgeInsets.symmetric(horizontal: 30.0),
       decoration: BoxDecoration(
         color: const Color.fromARGB(255, 236, 228, 228),

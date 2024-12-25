@@ -6,4 +6,10 @@ const titleText = TextStyle(
   color: mainColor,
 );
 
-const Color mainColor = Color(0xff1e0d2d);
+const heading = TextStyle(
+  fontSize: 20,
+  fontWeight: FontWeight.w700,
+  color: mainColor,
+);
+
+const Color mainColor =Color(0xff1e0d2d);

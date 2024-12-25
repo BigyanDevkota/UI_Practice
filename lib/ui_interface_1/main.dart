@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_practice/ui_interface_1/myStyle.dart';
+import 'package:ui_practice/ui_interface_1/posts.dart';
 import 'package:ui_practice/ui_interface_1/profile.dart';
 import 'package:ui_practice/ui_interface_1/appbar.dart';
 
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
             children: [
               Stack(
                 children: [
+                  MyPosts(),
                   Profile(),
                   MyAppBar(),
                 ],
