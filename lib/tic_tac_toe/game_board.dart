@@ -5,18 +5,46 @@ class GameBoard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(
-      itemCount: 9,
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 3,
-        crossAxisSpacing: 2.0,
-        mainAxisSpacing: 2.0,
-      ),
-      itemBuilder: (context, index) {
-        return Container(
-
-        );
-      },
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Text("Player"),
+            Text("Player"),
+          ],
+        ),
+        SizedBox(height: 30),
+        Expanded(
+          child: GridView.builder(
+            itemCount: 9,
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 3,
+              crossAxisSpacing: 6.0,
+              mainAxisSpacing: 6.0,
+            ),
+            itemBuilder: (context, index) {
+              return Container(
+                height: 10,
+                width: 10,
+                decoration: BoxDecoration(
+                  color: Colors.yellow,
+                ),
+              );
+            },
+          ),
+        ),
+        // SizedBox(height: 5),
+        Text("Player Wins"),
+        TextButton(
+          style: TextButton.styleFrom(
+            backgroundColor: Colors.white,
+          ),
+          onPressed: () {},
+          child: Text('Restart'),
+        ),
+      ],
     );
   }
 }

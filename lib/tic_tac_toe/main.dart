@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_practice/tic_tac_toe/game_board.dart';
 
 void main() {
   runApp(const HomeScreen());
@@ -13,6 +14,7 @@ class HomeScreen extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.red,
+        body: GameBoard(),
       ),
     );
   }
